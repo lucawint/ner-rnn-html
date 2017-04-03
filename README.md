@@ -91,7 +91,7 @@ address:port/ner and accepts data in json.
 The json should contain either a document (string)
 to process or a list of documents.
 
-Example request:
+Example request (also see [example_request.py](./example_request.py)):
 
 <code>ner_api = '{hostname}:{port}/ner'</code>
 
@@ -102,5 +102,6 @@ I live on the second floor.\</body>'))</code>
 The server returns a list of tagged documents:
 
 <code>json.loads(resp.text)</code>
+
 <code>\>>>['\<body>My name is \<name prob=0.1234>Luca\</name>, 
 I live on the \<loc prob=0.5678>second floor\</loc>.\</body>']</code>
