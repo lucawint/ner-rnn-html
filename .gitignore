@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# .idea files
+.idea/
+
+# TensorBoard folder
+TensorBoard_logdir/
+
+# Data files
+data/
+
+# Models
+models/
