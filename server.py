@@ -21,7 +21,7 @@ class NERServer:
 
         self.params = parse_config(config_fp)
 
-        self.neuralNER = NeuralNER(params_dct=self.params)
+        self.neuralNER = NeuralNER(params=self.params)
 
         # Empty run to load the encodings and model
         self.neuralNER.prepare_for_tagging()

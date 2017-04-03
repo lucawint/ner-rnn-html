@@ -20,6 +20,9 @@ RUN apt-get install -y python3-pip \
     && pip3 install -r requirements.txt \
     && apt-get clean
 
+# Copy current configuration file
+COPY config.ini ./config.ini
+
 # Copy trained models & encodings
 COPY models/ ./models/
 

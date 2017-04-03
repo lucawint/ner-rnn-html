@@ -82,7 +82,8 @@ using the included Dockerfile.
 For the tagging to work, you need to have
 a model (.h5 file) and its corresponding 
 encodings (located in [models/encodings](./models/encodings))!
-If a Docker container is used, copy the trained
+If a Docker container is used, copy the 
+current configuration and the trained
 model with its encodings to the [Docker folder](./Docker).
 
 The server runs on the port defined in the
